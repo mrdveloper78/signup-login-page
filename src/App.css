@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+@layer components {
+    .normal-inp{
+        @apply  w-full mb-2 p-1 border-b-2 border-lightGray;
+      }
+    .error-inp{
+        @apply border-2 border-red-600 mb-0 placeholder:text-red-600;
+    }  
+  }
+
+body{
+    background-color: rgb(118, 117, 162);
+}
+.test{
+    color: #2a1287;
+}
+
+::placeholder {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
